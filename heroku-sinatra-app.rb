@@ -8,12 +8,15 @@ require 'dm-migrations'
 require 'dm-sqlite-adapter'
 require 'erb'
 
+# forget this:
+
 class Numero
   include DataMapper::Resource
   property :id, 			Serial, :key => true
   property :amount, 		Integer, :default => 0
 end
 
+#############################
 
 class SWSApp < Sinatra::Base
 
