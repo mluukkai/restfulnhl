@@ -27,25 +27,34 @@
       <file leaf-file-name="heroku-sinatra-app.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="23" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.0">
+            <state line="69" column="9" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_stats.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="19" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_stats.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/list_stats.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="28" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
+            <state line="6" column="21" selection-start="118" selection-end="118" vertical-scroll-proportion="0.1590106">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="player.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="28" selection-start="41" selection-end="41" vertical-scroll-proportion="0.026501767">
+            <state line="1" column="28" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,10 +82,10 @@
         <option value="$PROJECT_DIR$/stats.html" />
         <option value="$PROJECT_DIR$/nhl_parser.rb" />
         <option value="$PROJECT_DIR$/statistics.rb" />
+        <option value="$PROJECT_DIR$/player.rb" />
         <option value="$PROJECT_DIR$/views/index.erb" />
         <option value="$PROJECT_DIR$/heroku-sinatra-app.rb" />
         <option value="$PROJECT_DIR$/views/list_stats.erb" />
-        <option value="$PROJECT_DIR$/player.rb" />
       </list>
     </option>
   </component>
@@ -409,23 +418,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/player.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="28" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="23" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.0">
+        <state line="69" column="9" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/list_stats.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="28" selection-start="41" selection-end="41" vertical-scroll-proportion="0.026501767">
+        <state line="6" column="21" selection-start="118" selection-end="118" vertical-scroll-proportion="0.1590106">
           <folding />
         </state>
       </provider>

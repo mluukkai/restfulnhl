@@ -39,7 +39,7 @@ class SWSApp < Sinatra::Base
     stats = Statistics.new( NHLParser.new )
     @point_order = stats.point_order
     #"#{stats.print_in_goals_order}"
-    "foo"
+    erb :index
   end
 
   def get_points_order
@@ -55,19 +55,19 @@ class SWSApp < Sinatra::Base
   end
 
   get '/points' do
-    @point_order = get_points_order
+    @list = get_points_order
     @msg = "NHL statistics - ordered by total points"
     erb :list_stats
   end
 
   get '/goals' do
-    @point_order = get_goals_order
+    @list = get_goals_order
     @msg = "NHL statistics - ordered by total goals"
     erb :list_stats
     end
 
   get '/assists' do
-    @point_order = get_assist_order
+    @list = get_assists_order
     @msg = "NHL statistics - ordered by total assists"
     erb :list_stats
 	end
