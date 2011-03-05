@@ -24,10 +24,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="heroku-sinatra-app.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="heroku-sinatra-app.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="18" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+            <state line="32" column="22" selection-start="647" selection-end="647" vertical-scroll-proportion="0.41696113">
               <folding />
             </state>
           </provider>
@@ -42,10 +42,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tableform.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tableform.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/tableform.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="60" selection-start="487" selection-end="487" vertical-scroll-proportion="0.2385159">
+            <state line="18" column="21" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/views/list_stats.erb" />
         <option value="$PROJECT_DIR$/player.rb" />
         <option value="$PROJECT_DIR$/formatter.rb" />
-        <option value="$PROJECT_DIR$/heroku-sinatra-app.rb" />
         <option value="$PROJECT_DIR$/views/tableform.erb" />
+        <option value="$PROJECT_DIR$/heroku-sinatra-app.rb" />
       </list>
     </option>
   </component>
@@ -434,16 +434,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
+    <entry file="file://$PROJECT_DIR$/views/tableform.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+        <state line="18" column="21" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/tableform.erb">
+    <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="60" selection-start="487" selection-end="487" vertical-scroll-proportion="0.2385159">
+        <state line="32" column="22" selection-start="647" selection-end="647" vertical-scroll-proportion="0.41696113">
           <folding />
         </state>
       </provider>

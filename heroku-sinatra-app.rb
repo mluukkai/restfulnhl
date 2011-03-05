@@ -30,6 +30,12 @@ class SWSApp < Sinatra::Base
 	end
 
 	get '/' do
+    redirect '/points'
+  end
+
+  get '/old_index' do
+    redirect '/points'
+
 	  @nro = Numero.first(:id => 1)
 
 	  @nro = Numero.new unless @nro  # jos ei löytynyt id:llä "1", niin luo uusi
