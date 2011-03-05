@@ -49,9 +49,11 @@ class Statistics
   end
 end
 
+=begin
 s = Statistics.new( NHLParser2.new )
 s.print_in_goals_order
 puts
 s.print_in_assists_order
 puts
 s.print_in_point_order
+=end

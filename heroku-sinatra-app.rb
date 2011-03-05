@@ -32,15 +32,15 @@ class SWSApp < Sinatra::Base
   end
 
   def get_points_order
-    Statistics.new( NHLParser.new ).point_order
+    Statistics.new( NHLParser2.new ).point_order
   end
 
   def get_goals_order
-    Statistics.new( NHLParser.new ).goal_order
+    Statistics.new( NHLParser2.new ).goal_order
   end
 
   def get_assists_order
-    Statistics.new( NHLParser.new ).assist_order
+    Statistics.new( NHLParser2.new ).assist_order
   end
 
   get '/points-dev' do
