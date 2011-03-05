@@ -1,5 +1,5 @@
 class Player
-  attr_reader :name, :team, :games, :goals, :assists
+  attr_reader :name, :team, :games, :goals, :assists, :points
 
   def initialize name, team, games, goals, assists
     @name = name

@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+  <h2> <%="#{@msg}"%></h2>
+
+  <p> <a href="/points">points</a> &nbsp; <a href="/goals">goals</a> &nbsp; <a href="/assists">assists</a> </p>
+
+    <table>
+
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                team
+            </td>
+            <td>
+                games
+            </td>
+            <td>
+                <a href="/goals">goals</a>
+            </td>
+            <td>
+                <a href="/assists">assists</a>
+            </td>
+            <td>
+                <a href="/points">points</a>
+            </td>
+          </tr>
+
+        <% @list.each do |player| %>
+
+          <tr>
+            <td>
+                <%="#{player.name}"%>
+            </td>
+            <td>
+                <%="#{player.team}"%>
+            </td>
+            <td>
+                <%="#{player.games}"%>
+            </td>
+            <td>
+                <%="#{player.goals}"%>
+            </td>
+            <td>
+                <%="#{player.assists}"%>
+            </td>
+            <td>
+                <%="#{player.points}"%>
+            </td>
+          </tr>
+        <% end %>
+
+    </table>
+
+</body>
+</html>

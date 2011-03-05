@@ -54,6 +54,12 @@ class SWSApp < Sinatra::Base
     Statistics.new( NHLParser.new ).assist_order
   end
 
+  get '/points-dev' do
+    @list = get_points_order
+    @msg = "NHL statistics - ordered by total points"
+    erb :tableform
+  end
+
   get '/points' do
     @list = get_points_order
     @msg = "NHL statistics - ordered by total points"

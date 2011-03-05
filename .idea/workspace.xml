@@ -27,7 +27,7 @@
       <file leaf-file-name="heroku-sinatra-app.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="9" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
+            <state line="41" column="14" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -42,10 +42,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_stats.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="list_stats.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/list_stats.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="21" selection-start="118" selection-end="118" vertical-scroll-proportion="0.1590106">
+            <state line="14" column="13" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tableform.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/tableform.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="17" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0795053">
               <folding />
             </state>
           </provider>
@@ -54,7 +63,7 @@
       <file leaf-file-name="player.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/player.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="28" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+            <state line="3" column="21" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,10 +91,11 @@
         <option value="$PROJECT_DIR$/stats.html" />
         <option value="$PROJECT_DIR$/nhl_parser.rb" />
         <option value="$PROJECT_DIR$/statistics.rb" />
-        <option value="$PROJECT_DIR$/player.rb" />
         <option value="$PROJECT_DIR$/views/index.erb" />
-        <option value="$PROJECT_DIR$/heroku-sinatra-app.rb" />
         <option value="$PROJECT_DIR$/views/list_stats.erb" />
+        <option value="$PROJECT_DIR$/heroku-sinatra-app.rb" />
+        <option value="$PROJECT_DIR$/player.rb" />
+        <option value="$PROJECT_DIR$/views/tableform.erb" />
       </list>
     </option>
   </component>
@@ -418,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="28" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="19" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
@@ -434,14 +437,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="9" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
+        <state line="41" column="14" selection-start="963" selection-end="963" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/list_stats.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="118" selection-end="118" vertical-scroll-proportion="0.1590106">
+        <state line="14" column="13" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tableform.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="17" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0795053">
           <folding />
         </state>
       </provider>
