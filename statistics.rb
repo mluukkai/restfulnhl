@@ -1,5 +1,5 @@
-require "player"
-require "nhl_parser"
+require "lib/player"
+require "lib/nhl_parser"
 
 require "rubygems"
 require "bundler/setup"
@@ -66,11 +66,11 @@ class Statistics
   end
 end
 
-#s = Statistics.new
-#s.fetch  NHLParser.new "stats.html"
-#s.print_in_goals_order
-#puts
-#s.print_in_assists_order
-#puts
-#s.print_in_point_order
+s = Statistics.new
+s.fetch  NHLParser.new "stats.html"
+s.print_in_goals_order
+puts
+s.print_in_assists_order
+puts
+s.print_in_point_order
 

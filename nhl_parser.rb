@@ -1,4 +1,4 @@
-require "player"
+require "lib/player"
 require 'open-uri'
 
 class NHLParser

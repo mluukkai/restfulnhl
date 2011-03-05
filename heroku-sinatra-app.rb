@@ -1,11 +1,11 @@
-require 'sinatra'
-require 'statistics'
-require 'formatter'
-
 require "rubygems"
 require "bundler/setup"
+require 'sinatra'
 
 require 'erb'
+
+require 'statistics'
+require 'formatter'
 
 class SWSApp < Sinatra::Base
 
@@ -14,7 +14,7 @@ class SWSApp < Sinatra::Base
 	end
 
   get '/reload_statistics' do
-    Statisticsnew.fetch(NHLParser.new)
+    Statistics.new.fetch(NHLParser.new)
     "statistics reloaded"
   end
 
