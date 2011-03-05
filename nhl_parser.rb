@@ -14,7 +14,7 @@ class NHLParser
 
     @contents = []
 
-    (1..2).each do |number|
+    (1..28).each do |number|
       page = base_url+number.to_s
       @contents << open(page)
     end
