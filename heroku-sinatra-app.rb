@@ -63,19 +63,22 @@ class SWSApp < Sinatra::Base
   get '/points' do
     @list = get_points_order
     @msg = "NHL statistics - ordered by total points"
-    erb :list_stats
+    @bold = 3
+    erb :tableform
   end
 
   get '/goals' do
     @list = get_goals_order
     @msg = "NHL statistics - ordered by total goals"
-    erb :list_stats
+    @bold = 1
+    erb :tableform
     end
 
   get '/assists' do
     @list = get_assists_order
     @msg = "NHL statistics - ordered by total assists"
-    erb :list_stats
+    @bold = 2
+    erb :tableform
 	end
 
 	get '/add' do
