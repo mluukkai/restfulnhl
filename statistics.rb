@@ -1,31 +1,48 @@
 require "player"
 require "nhl_parser"
-require "nhl_parser2"
+
+require "rubygems"
+require "bundler/setup"
+
+require 'dm-core'
+require 'dm-migrations'
+require 'dm-sqlite-adapter'
 
 class Statistics
-  def initialize parser
-    @players = []
+  def initialize
+    db_file = File.dirname(File.expand_path(__FILE__)) + "/db.sqlite"
+	  DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite://' + db_file)
+  end
 
+  def fetch parser
+    DataMapper.auto_migrate!
     parser.parse.each do |player|
-      p = Player.new( player[:name], player[:team], player[:games], player[:goals], player[:assists] )
-      @players << p
+      p = Player.add( player[:name], player[:team], player[:games], player[:goals], player[:assists] )
     end
   end
 
+  def get_players
+    player_list = []
+    Player.all().each do |player|
+      player_list << player
+    end
+    player_list
+  end
+
   def point_order
-    @players.dup
+    get_players().sort_by { |p| p.points }.reverse
   end
 
   def goal_order
-    @players.dup.sort_by { |p| p.goals }.reverse
+    get_players().sort_by { |p| p.goals }.reverse
   end
 
   def assist_order
-    @players.dup.sort_by { |p| p.assists }.reverse
+    get_players().sort_by { |p| p.assists }.reverse
   end
 
   def print_in_point_order
-    puts "pistepörssi:"
+    puts "pisteporssi:"
     puts "============"
     point_order.each do |player|
       puts player
@@ -33,7 +50,7 @@ class Statistics
   end
 
   def print_in_goals_order
-    puts "maalipörssi:"
+    puts "maaliporssi:"
     puts "============"
     goal_order.each do |player|
       puts player
@@ -41,7 +58,7 @@ class Statistics
   end
 
   def print_in_assists_order
-    puts "syöttöpörssi:"
+    puts "syottoporssi:"
     puts "============"
     assist_order.each do |player|
       puts player
@@ -49,11 +66,11 @@ class Statistics
   end
 end
 
-=begin
-s = Statistics.new( NHLParser2.new )
-s.print_in_goals_order
-puts
-s.print_in_assists_order
-puts
-s.print_in_point_order
-=end
+#s = Statistics.new
+#s.fetch  NHLParser.new "stats.html"
+#s.print_in_goals_order
+#puts
+#s.print_in_assists_order
+#puts
+#s.print_in_point_order
+

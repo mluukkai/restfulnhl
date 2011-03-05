@@ -3,11 +3,18 @@ require 'open-uri'
 
 class NHLParser2
   def initialize file = nil
+    @contents = []
+
+    if file!= nil
+      @contents << open(file)
+      return
+    end
+
     base_url = "http://www.nhl.com/ice/app?service=page&page=playerstats&fetchKey=20112ALLAASAll&viewName=summary&sort=points&pg="
 
     @contents = []
 
-    (1..3).each do |number|
+    (1..1).each do |number|
       page = base_url+number.to_s
       @contents << open(page)
     end
