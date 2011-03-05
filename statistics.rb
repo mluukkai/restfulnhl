@@ -49,14 +49,9 @@ class Statistics
 end
 
 #s = Statistics.new( NHLParser.new "stats.html" )
-s = Statistics.new( NHLParser.new )
-
-s.print_in_goals_order
-
-puts
-
-s.print_in_assists_order
-
-puts
-
-s.print_in_point_order
+#s = Statistics.new( NHLParser.new )
+#s.print_in_goals_order
+#puts
+#s.print_in_assists_order
+#puts
+#s.print_in_point_order

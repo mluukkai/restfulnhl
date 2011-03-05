@@ -24,19 +24,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="heroku-sinatra-app.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="heroku-sinatra-app.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="31" selection-start="902" selection-end="902" vertical-scroll-proportion="0.795053">
+            <state line="41" column="9" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="13" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
+            <state line="8" column="4" selection-start="154" selection-end="154" vertical-scroll-proportion="0.21201414">
               <folding />
             </state>
           </provider>
@@ -45,7 +45,7 @@
       <file leaf-file-name="statistics.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statistics.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="0" selection-start="943" selection-end="1002" vertical-scroll-proportion="0.0">
+            <state line="40" column="0" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -63,10 +63,10 @@
       <list>
         <option value="$PROJECT_DIR$/stats.html" />
         <option value="$PROJECT_DIR$/player.rb" />
-        <option value="$PROJECT_DIR$/statistics.rb" />
         <option value="$PROJECT_DIR$/nhl_parser.rb" />
-        <option value="$PROJECT_DIR$/views/index.erb" />
         <option value="$PROJECT_DIR$/heroku-sinatra-app.rb" />
+        <option value="$PROJECT_DIR$/statistics.rb" />
+        <option value="$PROJECT_DIR$/views/index.erb" />
       </list>
     </option>
   </component>
@@ -397,23 +397,23 @@
         <state line="7263" column="0" selection-start="210809" selection-end="210809" vertical-scroll-proportion="0.55454546" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.erb">
+    <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
+        <state line="41" column="9" selection-start="958" selection-end="958" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statistics.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="943" selection-end="1002" vertical-scroll-proportion="0.0">
+        <state line="40" column="0" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
+    <entry file="file://$PROJECT_DIR$/views/index.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="31" selection-start="902" selection-end="902" vertical-scroll-proportion="0.795053">
+        <state line="8" column="4" selection-start="154" selection-end="154" vertical-scroll-proportion="0.21201414">
           <folding />
         </state>
       </provider>

@@ -4,21 +4,14 @@
 </head>
 
 <body>
-  <h2>Tilaisuudet</h2>
+  <h2>NHL statistics - ordered by total points</h2>
 
-  <ul>
-    <% @lista.each do |tilaisuus| %>
+  <ol>
+    <% @point_order.each do |player| %>
 
-      <li> <b> <%="#{"#{tilaisuus.aika.strftime("%d.%m.%Y %H:%M")}"}"%> &nbsp; <%="#{tilaisuus.otsikko}"%></b>
-
-			<p> <%="#{tilaisuus.paikka}"%> <%="#{tilaisuus.kaupunki}"%> </p>
-			<p> <%="#{tilaisuus.kuvaus}"%> </p>
-		</li>
+      <li> <%="#{player}"%></li>
     <% end %>
-  </ul>
-
-  <p> <a href="/">takaisin</a></p>
-
+  </ol>
 
 
 </body>

@@ -36,8 +36,10 @@ class SWSApp < Sinatra::Base
 	  @nro.amount = @nro.amount + 1   # kasvata normaalisti kenttää
 	  @nro.save                       # persistoi
 
-    s = Statistics.new( NHLParser.new )
-    "#{s.print_in_goals_order}"
+    stats = Statistics.new( NHLParser.new )
+    @point_order = stats.point_order
+    #"#{stats.print_in_goals_order}"
+    erb :index
 	end
 
 	get '/add' do
