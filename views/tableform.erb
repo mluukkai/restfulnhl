@@ -8,7 +8,12 @@
 
     <table>
 
+      <% i = 1 %>
+
         <tr>
+            <td>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+            </td>
             <td>
 
             </td>
@@ -33,6 +38,10 @@
 
           <tr>
             <td>
+             <%="#{i}"%>
+            </td>
+
+            <td>
                 <%="#{player.name}"%>
             </td>
             <td>
@@ -51,6 +60,8 @@
                 <%="#{@formatter.points(player.points)}"%>
             </td>
           </tr>
+
+          <% i += 1 %>
         <% end %>
 
     </table>

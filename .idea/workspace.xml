@@ -24,10 +24,19 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nhl_parser2.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="nhl_parser2.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nhl_parser2.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="243" selection-end="243" vertical-scroll-proportion="0.509434">
+            <state line="28" column="17" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tableform.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/tableform.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="43" selection-start="230" selection-end="230" vertical-scroll-proportion="0.38745388">
               <folding />
             </state>
           </provider>
@@ -76,10 +85,10 @@
         <option value="$PROJECT_DIR$/views/list_stats.erb" />
         <option value="$PROJECT_DIR$/player.rb" />
         <option value="$PROJECT_DIR$/formatter.rb" />
-        <option value="$PROJECT_DIR$/views/tableform.erb" />
         <option value="$PROJECT_DIR$/statistics.rb" />
         <option value="$PROJECT_DIR$/heroku-sinatra-app.rb" />
         <option value="$PROJECT_DIR$/nhl_parser2.rb" />
+        <option value="$PROJECT_DIR$/views/tableform.erb" />
       </list>
     </option>
   </component>
@@ -125,6 +134,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="NHLclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NHLclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NHLclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,7 +362,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.5167785" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48322147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48322147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -421,13 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/tableform.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="21" selection-start="281" selection-end="281" vertical-scroll-proportion="0.09355509">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/heroku-sinatra-app.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="30" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
@@ -444,7 +460,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nhl_parser2.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="243" selection-end="243" vertical-scroll-proportion="0.509434">
+        <state line="28" column="17" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tableform.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="43" selection-start="230" selection-end="230" vertical-scroll-proportion="0.38745388">
           <folding />
         </state>
       </provider>
