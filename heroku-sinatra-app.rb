@@ -89,21 +89,6 @@ class SWSApp < Sinatra::Base
     erb :tableform
 	end
 
-	get '/add' do
-		"add"
-	end
-
-	post '/add' do
-
-	  "tilaisuus lisatty"
-
-	end
-
-	get '/list' do
-
-		"prkl"
-	end
-
 	get '/env' do
 	  ENV.inspect
 	end
