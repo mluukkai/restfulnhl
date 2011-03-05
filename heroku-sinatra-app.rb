@@ -57,27 +57,28 @@ class SWSApp < Sinatra::Base
   get '/points-dev' do
     @list = get_points_order
     @msg = "NHL statistics - ordered by total points"
+    @formatter = Formatter.new
     erb :tableform
   end
 
   get '/points' do
     @list = get_points_order
     @msg = "NHL statistics - ordered by total points"
-    @bold = 3
+    @formatter = Formatter.point
     erb :tableform
   end
 
   get '/goals' do
     @list = get_goals_order
     @msg = "NHL statistics - ordered by total goals"
-    @bold = 1
+    @formatter = Formatter.goal
     erb :tableform
     end
 
   get '/assists' do
     @list = get_assists_order
     @msg = "NHL statistics - ordered by total assists"
-    @bold = 2
+    @formatter = Formatter.assist
     erb :tableform
 	end
 
@@ -99,4 +100,48 @@ class SWSApp < Sinatra::Base
 	get '/env' do
 	  ENV.inspect
 	end
+end
+
+class Formatter
+  def self.goal
+    GoalFormatter.new
+  end
+
+  def self.assist
+    AssistFormatter.new
+  end
+
+  def self.point
+    PointFormatter.new
+  end
+
+  def points point
+    point
+  end
+
+  def assists assist
+    assist
+  end
+
+  def goals goal
+    goal
+  end
+end
+
+class GoalFormatter < Formatter
+  def goals goal
+    "<b>#{goal}</b>"
+  end
+end
+
+class AssistFormatter < Formatter
+  def assists assist
+    "<b>#{assist}</b>"
+  end
+end
+
+class PointFormatter < Formatter
+  def points point
+    "<b>#{point}</b>"
+  end
 end

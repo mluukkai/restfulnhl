@@ -42,13 +42,13 @@
                 <%="#{player.games}"%>
             </td>
             <td>
-                <%="#{player.goals}"%>
+                <%="#{@formatter.goals(player.goals)}"%>
             </td>
             <td>
-                <%="#{player.assists}"%>
+                <%="#{@formatter.assists(player.assists)}"%>
             </td>
             <td>
-                <%="#{player.points}"%>
+                <%="#{@formatter.points(player.points)}"%>
             </td>
           </tr>
         <% end %>
