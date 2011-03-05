@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+  <h2>Tilaisuudet</h2>
+
+  <ul>
+    <% @lista.each do |tilaisuus| %>
+
+      <li> <b> <%="#{"#{tilaisuus.aika.strftime("%d.%m.%Y %H:%M")}"}"%> &nbsp; <%="#{tilaisuus.otsikko}"%></b>
+
+			<p> <%="#{tilaisuus.paikka}"%> <%="#{tilaisuus.kaupunki}"%> </p>
+			<p> <%="#{tilaisuus.kuvaus}"%> </p>
+		</li>
+    <% end %>
+  </ul>
+
+  <p> <a href="/">takaisin</a></p>
+
+
+
+</body>
+</html>

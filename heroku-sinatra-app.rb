@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'statistics'
 
 require 'dm-core'
 require 'dm-migrations'
@@ -35,7 +36,8 @@ class SWSApp < Sinatra::Base
 	  @nro.amount = @nro.amount + 1   # kasvata normaalisti kenttää
 	  @nro.save                       # persistoi
 
-	  "erb :index"
+    s = Statistics.new( NHLParser.new )
+    "#{s.print_in_goals_order}"
 	end
 
 	get '/add' do
