@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+  <h2> <%="#{@msg}"%></h2>
+
+  <p> <a href="/points">points</a> &nbsp; <a href="/goals">goals</a> &nbsp; <a href="/assists">assists</a> </p>
+
+  <ol>
+    <% @list.each do |player| %>
+
+      <li> <%="#{player.to_s}"%></li>
+    <% end %>
+  </ol>
+
+</body>
+</html>
