@@ -11,8 +11,8 @@ require "lib/update_time"
 class SWSApp < Sinatra::Base
  
 	configure do
-    Statistics.new.fetch(NHLParser.new "stats.html")
-    #Statistics.new.fetch(NHLParser.new )
+    #Statistics.new.fetch(NHLParser.new "stats.html")
+    Statistics.new.fetch(NHLParser.new )
 	end
 
   get '/reload_statistics' do
