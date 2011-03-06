@@ -6,7 +6,7 @@ require 'erb'
 require 'content'
 
 
-class SWSApp < Sinatra::Base
+class RESTfulNHL < Sinatra::Base
  
 	configure do
     Content.fetch_contents 

@@ -3,7 +3,7 @@ require 'formatter'
 require "lib/update_time"
 
 class Content
-  def self.fetch_contents file = nul
+  def self.fetch_contents file = nil
     if file==nil
       Statistics.new.fetch(NHLParser.new)
     else
