@@ -1,5 +1,6 @@
 require "player"
 require "nhl_parser"
+require "lib/db_lib"
 
 require "rubygems"
 require "bundler/setup"
@@ -10,12 +11,11 @@ require 'dm-sqlite-adapter'
 
 class Statistics
   def initialize
-    db_file = File.dirname(File.expand_path(__FILE__)) + "/db.sqlite"
-	  DataMapper.setup(:default, ENV['DATABASE_URL'] || 'sqlite://' + db_file)
+    DbLib.init
   end
 
   def fetch parser
-    DataMapper.auto_migrate!
+    DbLib.drop_tables
     parser.parse.each do |player|
       p = Player.add( player[:name], player[:team], player[:games], player[:goals], player[:assists] )
     end

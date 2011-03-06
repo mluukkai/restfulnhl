@@ -6,15 +6,16 @@ require 'erb'
 
 require 'statistics'
 require 'formatter'
+require "lib/update_time"
 
 class SWSApp < Sinatra::Base
 
 	configure do
-    Statistics.new.fetch(NHLParser.new)
+    Statistics.new.fetch(NHLParser.new "stats.html")
 	end
 
   get '/reload_statistics' do
-    Statistics.new.fetch(NHLParser.new)
+    Statistics.new.fetch(NHLParser.new "stats.html")
     "statistics reloaded"
   end
 
@@ -38,6 +39,7 @@ class SWSApp < Sinatra::Base
     @list = get_points_order
     @msg = "NHL statistics - ordered by total points"
     @formatter = Formatter.point
+    @updated = UpdateTime.get_update_time
     erb :tableform
   end
 
@@ -45,6 +47,7 @@ class SWSApp < Sinatra::Base
     @list = get_goals_order
     @msg = "NHL statistics - ordered by total goals"
     @formatter = Formatter.goal
+    @updated = UpdateTime.get_update_time
     erb :tableform
     end
 
@@ -52,6 +55,7 @@ class SWSApp < Sinatra::Base
     @list = get_assists_order
     @msg = "NHL statistics - ordered by total assists"
     @formatter = Formatter.assist
+    @updated = UpdateTime.get_update_time
     erb :tableform
 	end
 
