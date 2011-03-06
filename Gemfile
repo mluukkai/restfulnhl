@@ -9,5 +9,6 @@ gem 'cucumber-sinatra'
 gem 'capybara'
 gem 'rspec'
 gem 'database_cleaner'
+gem 'celerity'
 
    

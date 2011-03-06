@@ -1,6 +1,7 @@
 require "player"
 require "nhl_parser"
 require "lib/db_lib"
+require "lib/update_time"
 
 require "rubygems"
 require "bundler/setup"
@@ -17,8 +18,9 @@ class Statistics
   def fetch parser
     DbLib.drop_tables
     parser.parse.each do |player|
-      p = Player.add( player[:name], player[:team], player[:games], player[:goals], player[:assists] )
+      Player.add( player[:name], player[:team], player[:games], player[:goals], player[:assists] )
     end
+    UpdateTime.refresh_update_time
   end
 
   def get_players
