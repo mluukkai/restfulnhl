@@ -15,23 +15,14 @@ class Player
   property :assists,  Integer, :default => 0
   property :points,   Integer, :default => 0
 
-  def initialize name, team, games, goals, assists
-    @name = name
-    @team = team
-    @games = games
-    @goals = goals
-    @assists = assists
-    @points = @goals + @assists
-  end
-
-  def self.add name, team, games, goals, assists
-    p = Player.new name, team, games, goals, assists
-    p.name = name
-    p.team = team
-    p.games = games
-    p.goals = goals
-    p.assists = assists
-    p.points = goals + assists
+  def self.add player_string
+    p = Player.new
+    p.name = player_string[:name]
+    p.team = player_string[:team]
+    p.games = player_string[:games]
+    p.goals = player_string[:goals]
+    p.assists = player_string[:assists]
+    p.points = p.goals + p.assists
     p.save
     p
   end

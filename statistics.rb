@@ -6,10 +6,6 @@ require "lib/update_time"
 require "rubygems"
 require "bundler/setup"
 
-require 'dm-core'
-require 'dm-migrations'
-require 'dm-sqlite-adapter'
-
 class Statistics
   def initialize
     DbLib.init
@@ -18,7 +14,7 @@ class Statistics
   def fetch parser
     DbLib.drop_tables
     parser.parse.each do |player|
-      Player.add( player[:name], player[:team], player[:games], player[:goals], player[:assists] )
+      Player.add( player )
     end
     UpdateTime.refresh_update_time
   end

@@ -90,3 +90,7 @@ class NHLParser
   end
 end
 
+#p = NHLParser.new "stats.html"
+#p.parse.each  do |player|
+#  Player.add( player[:name], player[:team], player[:games], player[:goals], player[:assists] )
+#end
