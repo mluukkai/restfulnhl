@@ -19,7 +19,7 @@ class Player
   property :plusminus,Integer, :default => 0
   property :shots,    Integer, :default => 0
 
-  def self.add player_string
+  def self.add player_string 
     p = Player.new
     p.name = player_string[:name]
     p.url = player_string[:url]
