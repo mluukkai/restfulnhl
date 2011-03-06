@@ -69,12 +69,17 @@ class NHLParser
     return if fields[2] == nil
 
     name = extract_name_field fields[2]
+    url = extract_name_url_field fields[2]
     team = extract_normal_field fields[3]
     games = ( extract_normal_field fields[5] ).to_i
     goals = ( extract_normal_field fields[6] ).to_i
     assists = ( extract_normal_field fields[7] ).to_i
+    plusminus = ( extract_normal_field fields[9] ).to_i
+    pim = ( extract_normal_field fields[10] ).to_i
+    shots = ( extract_normal_field fields[16] ).to_i
 
-    { :name => name, :team => team, :games => games, :goals => goals, :assists => assists}
+    { :url => url, :name => name, :team => team, :games => games, :goals => goals,
+      :assists => assists, :plusminus => plusminus, :pim => pim, :shots => shots }
   end
 
   def extract_name_field field
@@ -84,6 +89,14 @@ class NHLParser
     remains.match( re )[1]
   end
 
+  def extract_name_url_field field
+    re = Regexp.new( "\<a(.*)\<\/a\>" )
+    remains = field.match( re )[1]
+    re = Regexp.new( "=(.*)\>" )
+    remains = remains.match( re )[1]
+    remains[1, remains.length]
+  end
+
   def extract_normal_field field
     re = Regexp.new( "\>(.*)\<\/td\>" )
     field.match( re )[1].rstrip.lstrip
@@ -91,6 +104,4 @@ class NHLParser
 end
 
 #p = NHLParser.new "stats.html"
-#p.parse.each  do |player|
-#  Player.add( player[:name], player[:team], player[:games], player[:goals], player[:assists] )
-#end
+#p.parse.each { |player| puts player.inspect }

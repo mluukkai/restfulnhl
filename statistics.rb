@@ -39,6 +39,18 @@ class Statistics
     get_players().sort_by { |p| p.assists }.reverse
   end
 
+  def pim_order
+    get_players().sort_by { |p| p.pim }.reverse
+  end
+
+  def plusminus_order
+    get_players().sort_by { |p| p.plusminus }.reverse
+  end
+
+  def shots_order
+    get_players().sort_by { |p| p.shots }.reverse
+  end
+
   def print_in_point_order
     puts "pisteporssi:"
     puts "============"

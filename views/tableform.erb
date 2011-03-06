@@ -20,19 +20,28 @@
 
             </td>
             <td>
-                team
+                team &nbsp; &nbsp; 
             </td>
             <td>
-                games
+                games &nbsp;
             </td>
             <td>
-                <a href="/goals"> <%="#{@formatter.goals('goals')}"%> </a>
+                <a href="/goals"> <%="#{@formatter.goals('goals')}"%> </a> &nbsp;
             </td>
             <td>
-                <a href="/assists"> <%="#{@formatter.assists('assists')}"%> </a>
+                <a href="/assists"> <%="#{@formatter.assists('assists')}"%> </a> &nbsp;
             </td>
             <td>
-                <a href="/points"> <%="#{@formatter.points('points')}"%> </a>
+                <a href="/points"> <%="#{@formatter.points('points')}"%> </a> &nbsp;
+            </td>
+            <td>
+               <a href="/pim"> <%="#{@formatter.pim('PIM')}"%> </a> &nbsp;&nbsp;
+            </td>
+            <td>
+               <a href="/plusminus"> <%="#{@formatter.plusminus('+/-')}"%> </a> &nbsp;&nbsp;
+            </td>
+            <td>
+                <a href="/shots"> <%="#{@formatter.shots('shots')}"%></a> 
             </td>
           </tr>
 
@@ -44,7 +53,7 @@
             </td>
 
             <td>
-                <%="#{player.name}"%>
+                <a href=<%="\"http://www.nhl.com#{player.url}"%>>  <%="#{player.name}"%> </a>
             </td>
             <td>
                 <%="#{player.team}"%>
@@ -60,6 +69,15 @@
             </td>
             <td>
                 <%="#{@formatter.points(player.points)}"%>
+            </td>
+            <td>
+                <%="#{@formatter.pim(player.pim)}"%>
+            </td>
+            <td>
+                <%="#{@formatter.plusminus(player.plusminus)}"%>
+            </td>
+            <td>
+                <%="#{@formatter.shots(player.shots)}"%>
             </td>
           </tr>
 
