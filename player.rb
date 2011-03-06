@@ -14,7 +14,6 @@ class Player
   property :games, 		Integer, :default => 0
   property :goals, 		Integer, :default => 0
   property :assists,  Integer, :default => 0
-  property :points,   Integer, :default => 0
   property :pim,      Integer, :default => 0
   property :plusminus,Integer, :default => 0
   property :shots,    Integer, :default => 0
@@ -27,16 +26,14 @@ class Player
     p.games = player_string[:games]
     p.goals = player_string[:goals]
     p.assists = player_string[:assists]
-    p.points = p.goals + p.assists
     p.pim = player_string[:pim]
     p.plusminus = player_string[:plusminus]
     p.shots = player_string[:shots]
     p.save
-    p
   end
 
-  def assists
-    @assists
+  def points
+    @goals + @assists
   end
 
   def to_s
