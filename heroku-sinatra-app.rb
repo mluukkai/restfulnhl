@@ -9,11 +9,11 @@ require 'content'
 class RESTfulNHL < Sinatra::Base
  
 	configure do
-    Content.fetch_contents 
+    Content.fetch_contents "stats.html"
   end
 
   get '/reload_statistics' do
-    Content.fetch_contents
+    Content.fetch_contents 
     "statistics reloaded"
   end
 
