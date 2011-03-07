@@ -4,4 +4,6 @@ log/*.log
 tmp/
 *.sqlite
 lib/*.sqlite
-,idea/
+.idea/
+Gemfile.lock
+stats.html
