@@ -2,7 +2,7 @@ class Formatter
   def self.goal
     GoalFormatter.new
   end
-
+ 
   def self.assist
     AssistFormatter.new
   end
