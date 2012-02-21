@@ -1,6 +1,8 @@
 require "player"
 require 'open-uri'
 
+# TODO: refactor to use NokoGiri
+
 class NHLParser
   def initialize file = nil
     @contents = []
